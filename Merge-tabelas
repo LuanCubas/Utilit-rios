@@ -1,0 +1,5 @@
+-- PARA REALIZAR INSERT OU UPDATE EM TABELAS QUANDO UMA CONDIÇÃO FOR OU NÃO ATENDNIDA --
+
+MERGE INTO USING <select, tabela ou dual> ON (condição da relação)
+WHEN NOT MATCHED THEN INSERT (<campos que receberão os valores>) VALUES (<valor1,valor2...>)
+WHEN MATCHED THEN UPDATE SET . = ;
